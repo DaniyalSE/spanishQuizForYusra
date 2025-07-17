@@ -1,6 +1,6 @@
 # Spanish Quiz for Yusra
 
-This is a simple and fun Spanish vocabulary quiz application built with React and Vite. It's designed to help users practice their Spanish language skills in an interactive way.
+This is a simple and fun Spanish vocabulary quiz application built with React and Vite. It's designed to help users practice their Spanish language skills in an interactive way. (My Wife asked me to take a quiz of her Spanish orally, so I decided to make this for her as a gesture
 
 ## Features
 
