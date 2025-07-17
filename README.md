@@ -1,69 +1,101 @@
-# React + TypeScript + Vite
+# Spanish Quiz for Yusra
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple and fun Spanish vocabulary quiz application built with React and Vite. It's designed to help users practice their Spanish language skills in an interactive way.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Two-way translation:** Quizzes users on translating from Spanish to English and English to Spanish.
+- **Multiple-choice questions:** Presents four options for each question.
+- **Instant feedback:** Shows whether the selected answer is correct or incorrect.
+- **Score tracking:** Keeps track of the user's score throughout the quiz.
+- **Responsive design:** Works well on different screen sizes.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React:** A JavaScript library for building user interfaces.
+- **Vite:** A fast build tool and development server for modern web projects.
+- **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
+- **Lucide-React:** A library of simply beautiful icons.
+- **gh-pages:** A tool to deploy files to a gh-pages branch on GitHub.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js and npm (or yarn) installed on your machine.
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/daniyalse/spanishQuizForYusra.git
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd spanish-quiz-for-yusra
+   ```
+
+3. **Install the dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+### Usage
+
+1. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+2. **Open your browser and go to `http://localhost:5173` (or the address shown in your terminal).**
+
+## Deployment
+
+This project is set up for deployment to GitHub Pages. To deploy the application, run the following command:
+
+```bash
+npm run deploy
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This will build the project and push the contents of the `dist` directory to the `gh-pages` branch of your repository.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Available Scripts
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the application for production.
+- `npm run preview`: Serves the production build locally for preview.
+- `npm run lint`: Lints the source code using ESLint.
+- `npm run predeploy`: A script that runs before deployment (in this case, it runs the build script).
+- `npm run deploy`: Deploys the application to GitHub Pages.
+
+## Project Structure
+
 ```
+.
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   │   └── react.svg
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+├── .gitignore
+├── package.json
+├── README.md
+└── vite.config.ts
+```
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or find any issues, please open an issue or create a pull request.
+
+## License
+
+This project is licensed under the MIT License.
